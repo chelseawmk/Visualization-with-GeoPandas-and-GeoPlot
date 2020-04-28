@@ -17,5 +17,5 @@
 `!pip install git+git://github.com/ResidentMario/geoplot.git`<br>
 * Define schema of how many breakdown levels you would like for your map<br>
 `scheme = mapclassify.Quantiles(data_column, k=10)`<br>
-* Build choropleth map<br>
+* Build choropleth map to customize color schemes, lengend, map projection and more.<br>
 `gplt.choropleth(county_data, hue=county_data['Unemployment_rate_2018'], scheme=scheme,cmap='coolwarm', figsize=(20, 15),legend=True)`
